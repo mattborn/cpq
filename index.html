@@ -1,0 +1,453 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Revalize Cloud</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="shared.css">
+    <script src="https://kit.fontawesome.com/0bef9420dc.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="nav-column" id="nav-first">
+      <div class="nav-indent">
+        <div>Revalize Cloud</div>
+      </div>
+      <div class="nav-indent">
+        <div class="quick-search">
+          <i class="fa-regular fa-magnifying-glass"></i>
+          <input placeholder="Quick search">
+        </div>
+      </div>
+      <div class="nav-indent">
+        <div class="nav-item button active" data-sub-id="dashboards">
+          <i class="fa-regular fa-dashboard"></i> Dashboards
+        </div>
+      </div>
+      <div class="nav-group-a expand">
+        <div class="nav-group-a-top button">
+          <div class="fill small">CPQ</div>
+          <i class="fa-regular fa-angle-down disclosure"></i>
+          <i class="fa-regular fa-angle-up disclosure"></i>
+        </div>
+        <div class="nav-group-b">
+          <div class="nav-item-parent button">
+            <i class="nav-item-icon fa-regular fa-tools"></i>
+            <div class="fill">Tools</div>
+            <i class="fa-regular fa-minus disclosure"></i>
+            <i class="fa-regular fa-plus disclosure"></i>
+          </div>
+          <div class="nav-item button" data-sub-id="tools-general">General</div>
+          <div class="nav-item button" data-sub-id="tools-maintenance">Maintenance</div>
+          <div class="nav-item button" data-sub-id="tools-messaging">Messaging</div>
+          <div class="nav-item button" data-sub-id="tools-package">Package &amp; Publish</div>
+          <div class="nav-item button" data-sub-id="tools-reports">Reports</div>
+        </div>
+        <div class="nav-group-b">
+          <div class="nav-item button" data-sub-id="quotes-orders">
+            <i class="fa-regular fa-file-lines"></i> Quotes & Orders
+          </div>
+        </div>
+        <div class="nav-group-b">
+          <div class="nav-item-parent button">
+            <i class="nav-item-icon fa-regular fa-layer-group"></i>
+            <div class="fill">Products & Items</div>
+            <i class="fa-regular fa-minus disclosure"></i>
+            <i class="fa-regular fa-plus disclosure"></i>
+          </div>
+          <div class="nav-item button" data-sub-id="products">Products</div>
+          <div class="nav-item button" data-sub-id="items">Items</div>
+        </div>
+        <div class="nav-group-b">
+          <div class="nav-item-parent button">
+            <i class="nav-item-icon fa-regular fa-file-spreadsheet"></i>
+            <div class="fill">Configurations</div>
+            <i class="fa-regular fa-minus disclosure"></i>
+            <i class="fa-regular fa-plus disclosure"></i>
+          </div>
+          <div class="nav-item button" data-sub-id="configs-setup">Interface Setup</div>
+          <div class="nav-item button" data-sub-id="configs-bom">BOM</div>
+          <div class="nav-item button" data-sub-id="configs-routing">Routing</div>
+          <div class="nav-item button" data-sub-id="configs-2d">2D &amp; 3D</div>
+          <div class="nav-item button" data-sub-id="configs-settings">Settings</div>
+        </div>
+        <div class="nav-group-b">
+          <div class="nav-item-parent button">
+            <i class="nav-item-icon fa-regular fa-square-dollar"></i>
+            <div class="fill">Pricing</div>
+            <i class="fa-regular fa-minus disclosure"></i>
+            <i class="fa-regular fa-plus disclosure"></i>
+          </div>
+          <div class="nav-item button" data-sub-id="pricing-setup">Pricing Setup</div>
+          <div class="nav-item button" data-sub-id="pricing-discounts">Discounts</div>
+          <div class="nav-item button" data-sub-id="pricing-permissions">Permissions</div>
+        </div>
+        <div class="nav-group-b">
+          <div class="nav-item-parent button">
+            <i class="nav-item-icon fa-regular fa-user-group"></i>
+            <div class="fill">Users</div>
+            <i class="fa-regular fa-minus disclosure"></i>
+            <i class="fa-regular fa-plus disclosure"></i>
+          </div>
+          <div class="nav-item button" data-sub-id="users">Manage Users</div>
+          <div class="nav-item button" data-sub-id="users-permissions">Permissions</div>
+        </div>
+      </div>
+      <div class="nav-group-a">
+        <div class="nav-group-a-top button">
+          <div class="fill small">Settings</div>
+          <i class="fa-regular fa-angle-down disclosure"></i>
+          <i class="fa-regular fa-angle-up disclosure"></i>
+        </div>
+        <div class="nav-group-b">
+          <div class="nav-item-parent button">
+            <i class="nav-item-icon fa-regular fa-merge"></i>
+            <div class="fill">Integrations</div>
+            <i class="fa-regular fa-plus disclosure"></i>
+          </div>
+          <div class="nav-item button" data-sub-id="integrations-general">General</div>
+          <div class="nav-item button" data-sub-id="integrations-cad">CAD</div>
+          <div class="nav-item button" data-sub-id="integrations-netsuite">Netsuite</div>
+          <div class="nav-item button" data-sub-id="integrations-oracle">Oracle</div>
+        </div>
+        <div class="nav-group-b">
+          <div class="nav-item button" data-sub-id="settings-catalog">
+            <i class="fa-regular fa-grid-2"></i> Catalog
+          </div>
+        </div>
+        <div class="nav-group-b">
+          <div class="nav-item button" data-sub-id="settings-cart">
+            <i class="fa-regular fa-cart-shopping"></i> Cart
+          </div>
+        </div>
+        <div class="nav-group-b">
+          <div class="nav-item button" data-sub-id="settings-customization">
+            <i class="fa-regular fa-stars"></i> Customization
+          </div>
+        </div>
+        <div class="nav-group-b">
+          <div class="nav-item button" data-sub-id="settings-localization">
+            <i class="fa-regular fa-language"></i> Localization
+          </div>
+        </div>
+        <div class="nav-group-b">
+          <div class="nav-item button" data-sub-id="settings-system">
+            <i class="fa-regular fa-sliders"></i> System
+          </div>
+        </div>
+        <div class="nav-group-b">
+          <div class="nav-item button" data-sub-id="settings-interface">
+            <i class="fa-regular fa-browser"></i> App Interface
+          </div>
+        </div>
+        <div class="nav-group-b">
+          <div class="nav-item button" data-sub-id="settings-templates">
+            <i class="fa-regular fa-table-layout"></i> Templates
+          </div>
+        </div>
+        <div class="nav-group-b">
+          <div class="nav-item button" data-sub-id="settings-queues">
+            <i class="fa-regular fa-grid-dividers"></i> Queues
+          </div>
+        </div>
+      </div>
+      <div class="nav-group-a">
+        <div class="nav-group-a-top button">
+          <div class="fill small">Lifecycle</div>
+          <i class="fa-regular fa-angle-down disclosure"></i>
+          <i class="fa-regular fa-angle-up disclosure"></i>
+        </div>
+        <div class="nav-group-b">
+          <div class="nav-item button" data-sub-id="lifecycle">
+            <i class="fa-regular fa-arrows-spin"></i> Lifecycle
+          </div>
+        </div>
+      </div>
+      <div class="fill"></div>
+      <div class="nav-indent">
+        <div class="point-plane">KM</div>
+        <div class="text-stack">
+          <div>Kiana M.</div>
+          <div class="small">System Admin</div>
+        </div>
+      </div>
+    </div>
+    <div class="nav-column" id="nav-second">
+      <div class="nav-sub expand" id="dashboards">
+        <h2>dashboards</h2>
+        <div class="nav-sub-item button" data-page="/AdminMain">Admin Home</div>
+        <div class="nav-sub-item button active" data-page="/">Front End Home</div>
+      </div>
+      <div class="nav-sub" id="tools-general">
+        <h2>general tools</h2>
+        <div class="nav-sub-item button" data-page="/AdminMain?page_ind=not%20found">File Manager</div>
+        <div class="nav-sub-item button" data-page="/AdminMain?page_ind=not%20found">Import/Export</div>
+        <div class="nav-sub-item button" data-page="/CopyUtilityMaint">Product Copy</div>
+        <div class="nav-sub-item button" data-page="/MassReplace">Item Replace</div>
+        <div class="nav-sub-item button" data-page="/core/UserMassMove.jsp">User Move</div>
+        <div class="nav-sub-item button" data-page="/ProductStatusMaint">Configuration Status Change</div>
+      </div>
+      <div class="nav-sub" id="tools-maintenance">
+        <h2>maintenance</h2>
+        <div class="nav-sub-item button" data-page="/core/clipperMaintenance.jsp">Update Catalog Index</div>
+        <div class="nav-sub-item button" data-page="/spr/admin/MaintenanceMode">Maintenance Mode</div>
+        <div class="nav-sub-item button" data-page="/DesignPurge">Delete Records</div>
+        <div class="nav-sub-item button" data-page="/RealTime2DAdmin">Flush Image Cache</div>
+      </div>
+      <div class="nav-sub" id="tools-messaging">
+        <h2>messaging</h2>
+        <div class="nav-sub-item button" data-page="/SystemMsgMaint">System Messages</div>
+        <div class="nav-sub-item button" data-page="/Session">User Alerts</div>
+        <div class="nav-sub-item button" data-page="/SendGroupEmail">Group E-mail</div>
+      </div>
+      <div class="nav-sub" id="tools-package">
+        <h2>package &amp; publish</h2>
+        <div class="nav-sub-item button" data-page="/publish/Packager">Data Packager</div>
+        <div class="nav-sub-item button" data-page="/publish/PublishScheduler">Publish Scheduler</div>
+        <div class="nav-sub-item button" data-page="/publish/PackageManager">Package Uploader</div>
+        <div class="nav-sub-item button" data-page="/publish/SuperPackager">Product Packager</div>
+      </div>
+      <div class="nav-sub" id="tools-reports">
+        <h2>reports</h2>
+        <div class="nav-sub-item button" data-page="/BugMaint">Administrative Feedback</div>
+        <div class="nav-sub-item button" data-page="/">Company Assignment</div>
+        <div class="nav-sub-item button" data-page="/">Configurations</div>
+        <div class="nav-sub-item button" data-page="/spr/admin/DiscountWorkflowMembership">Discount Workflow Membership</div>
+        <div class="nav-sub-item button" data-page="/">Event Statistics</div>
+        <div class="nav-sub-item button" data-page="/">Forecasting Report</div>
+        <div class="nav-sub-item button" data-page="/">Item Effectivity Report</div>
+        <div class="nav-sub-item button" data-page="/">Login Statistics</div>
+        <div class="nav-sub-item button" data-page="/">Product BOM Report</div>
+        <div class="nav-sub-item button" data-page="/">Product Data Report</div>
+        <div class="nav-sub-item button" data-page="/">Product Rules Report</div>
+        <div class="nav-sub-item button" data-page="/">SQL Query Tool</div>
+        <div class="nav-sub-item button" data-page="/">User Activity</div>
+        <div class="nav-sub-item button" data-page="/">User Group Membership</div>
+        <div class="nav-sub-item button" data-page="/">User Group Permissions</div>
+        <div class="nav-sub-item button" data-page="/">Where Used Report</div>
+        <div class="nav-sub-item button" data-page="/">Workgroup Membership</div>
+        <div class="nav-sub-item button" data-page="/">Workgroups by User</div>
+      </div>
+      <div class="nav-sub" id="quotes-orders">
+        <h2>quotes &amp; orders</h2>
+        <div class="nav-sub-item button" data-page="/">Quote &amp; Order Statuses</div>
+        <div class="nav-sub-item button" data-page="/">Probability Lost Status</div>
+        <div class="nav-sub-item button" data-page="/">Quote &amp; Order Permissions</div>
+        <div class="nav-sub-item button" data-page="/">Quote &amp; Order List</div>
+        <div class="nav-sub-item button" data-page="/">Quote &amp; Order Info Screen</div>
+        <div class="nav-sub-item button" data-page="/">Quote Detail - BOM & Line Items</div>
+        <div class="nav-sub-item button" data-page="/">Shipping Methods</div>
+        <div class="nav-sub-item button" data-page="/">Notifications</div>
+        <div class="nav-sub-item button" data-page="/">Quick Entry Settings</div>
+        <div class="nav-sub-item button" data-page="/">Quote & Order Numbers</div>
+      </div>
+      <div class="nav-sub" id="products">
+        <h2>products</h2>
+        <div class="nav-sub-item button" data-page="/">Product List</div>
+        <div class="nav-sub-item button" data-page="/">Product Categories</div>
+        <div class="nav-sub-item button" data-page="/">Product Revision History</div>
+        <div class="nav-sub-item button" data-page="/">Product Permissions</div>
+      </div>
+      <div class="nav-sub" id="items">
+        <h2>items</h2>
+        <div class="nav-sub-item button" data-page="/">Item Families</div>
+        <div class="nav-sub-item button" data-page="/">Item List</div>
+        <div class="nav-sub-item button" data-page="/">Item Subassemblies</div>
+        <div class="nav-sub-item button" data-page="/">Item Field Names</div>
+        <div class="nav-sub-item button" data-page="/">Item Family Fields</div>
+        <div class="nav-sub-item button" data-page="/">Item Generation Rules</div>
+        <div class="nav-sub-item button" data-page="/">Item Number Sequence</div>
+      </div>
+      <div class="nav-sub" id="configs-setup">
+        <h2>interface setup</h2>
+        <div class="nav-sub-item button" data-page="/">Logic Items &amp; Groups</div>
+        <div class="nav-sub-item button" data-page="/">Persistent Logic Items</div>
+        <div class="nav-sub-item button" data-page="/">Equations</div>
+        <div class="nav-sub-item button" data-page="/">Special Request Rules</div>
+        <div class="nav-sub-item button" data-page="/">Case Statements</div>
+        <div class="nav-sub-item button" data-page="/">Javascript Functions</div>
+      </div>
+      <div class="nav-sub" id="configs-bom">
+        <h2>bom</h2>
+        <div class="nav-sub-item button" data-page="/">BOM Logic Items</div>
+        <div class="nav-sub-item button" data-page="/">Driven Item Masters</div>
+        <div class="nav-sub-item button" data-page="/">BOM Skeletons</div>
+        <div class="nav-sub-item button" data-page="/">BOM Field Edit</div>
+        <div class="nav-sub-item button" data-page="/">BOM Temporary Fields</div>
+      </div>
+      <div class="nav-sub" id="configs-routing">
+        <h2>routing</h2>
+        <div class="nav-sub-item button" data-page="/">Routing Sequence</div>
+        <div class="nav-sub-item button" data-page="/">Routing Operations</div>
+        <div class="nav-sub-item button" data-page="/">Routing Parameters</div>
+        <div class="nav-sub-item button" data-page="/">Routing Factors</div>
+        <div class="nav-sub-item button" data-page="/">Routings</div>
+        <div class="nav-sub-item button" data-page="/">Routing Logic Items</div>
+        <div class="nav-sub-item button" data-page="/">Routing Equations</div>
+        <div class="nav-sub-item button" data-page="/">Routing Automation</div>
+        <div class="nav-sub-item button" data-page="/">Routing Operation Logic Items</div>
+      </div>
+      <div class="nav-sub" id="configs-2d">
+        <h2>2D &amp; 3D</h2>
+        <div class="nav-sub-item button" data-page="/">Real Time 2D Images</div>
+        <div class="nav-sub-item button" data-page="/">Real Time 3D Models</div>
+      </div>
+      <div class="nav-sub" id="configs-settings">
+        <h2>config settings</h2>
+        <div class="nav-sub-item button" data-page="/">Anonymous Login Links</div>
+        <div class="nav-sub-item button" data-page="/">Configuration Status Notifications</div>
+        <div class="nav-sub-item button" data-page="/">Configuration Logic Group Permissions</div>
+        <div class="nav-sub-item button" data-page="/">Configuration Status Permissions</div>
+        <div class="nav-sub-item button" data-page="/">Configuration List Columns</div>
+        <div class="nav-sub-item button" data-page="/">Configuration Nav Tabs</div>
+        <div class="nav-sub-item button" data-page="/">Configuration Numbers</div>
+      </div>
+      <div class="nav-sub" id="pricing-setup">
+        <h2>pricing setup</h2>
+        <div class="nav-sub-item button" data-page="/">Price Books</div>
+        <div class="nav-sub-item button" data-page="/">Pricing Factors</div>
+        <div class="nav-sub-item button" data-page="/">Pricing Equations</div>
+        <div class="nav-sub-item button" data-page="/">Driven Prices</div>
+        <div class="nav-sub-item button" data-page="/">Pricing Settings</div>
+        <div class="nav-sub-item button" data-page="/">Currency Conversion</div>
+      </div>
+      <div class="nav-sub" id="pricing-discounts">
+        <h2>discounts</h2>
+        <div class="nav-sub-item button" data-page="/">Discount Rules</div>
+        <div class="nav-sub-item button" data-page="/">Discount Groups</div>
+        <div class="nav-sub-item button" data-page="/">Discount Workflows</div>
+        <div class="nav-sub-item button" data-page="/">Checkout Discounts</div>
+        <div class="nav-sub-item button" data-page="/">Promotional Discounts</div>
+      </div>
+      <div class="nav-sub" id="pricing-permissions">
+        <h2>permissions</h2>
+        <div class="nav-sub-item button" data-page="/">Distributor Pricing</div>
+        <div class="nav-sub-item button" data-page="/">Price Book</div>
+      </div>
+      <div class="nav-sub" id="users">
+        <h2>users</h2>
+        <div class="nav-sub-item button" data-page="/">User Groups</div>
+        <div class="nav-sub-item button" data-page="/">Customers</div>
+        <div class="nav-sub-item button" data-page="/">Companies</div>
+        <div class="nav-sub-item button" data-page="/">Users</div>
+        <div class="nav-sub-item button" data-page="/">Workgroups</div>
+        <div class="nav-sub-item button" data-page="/">Notification Groups</div>
+      </div>
+      <div class="nav-sub" id="users-permissions">
+        <h2>permissions</h2>
+        <div class="nav-sub-item button" data-page="/">User Groups</div>
+        <div class="nav-sub-item button" data-page="/">Customers</div>
+        <div class="nav-sub-item button" data-page="/">Query Access</div>
+      </div>
+      <div class="nav-sub" id="integrations-general">
+        <h2>general integrations</h2>
+        <div class="nav-sub-item button" data-page="/">Avalara Settings</div>
+        <div class="nav-sub-item button" data-page="/">Connect Settings</div>
+        <div class="nav-sub-item button" data-page="/">Dynamics CRM Settings</div>
+        <div class="nav-sub-item button" data-page="/">External Automation</div>
+        <div class="nav-sub-item button" data-page="/">Salesforce Settings</div>
+      </div>
+      <div class="nav-sub" id="integrations-cad">
+        <h2>cad</h2>
+        <div class="nav-sub-item button" data-page="/">CAD Configuration Variables</div>
+        <div class="nav-sub-item button" data-page="/">CAD Engine Models</div>
+        <div class="nav-sub-item button" data-page="/">CAD Model Bypass</div>
+        <div class="nav-sub-item button" data-page="/">CAD Model Logic Items</div>
+        <div class="nav-sub-item button" data-page="/">CAD Model Parameters</div>
+        <div class="nav-sub-item button" data-page="/">CAD Production Outputs</div>
+        <div class="nav-sub-item button" data-page="/">CAD Production Output Permissions</div>
+        <div class="nav-sub-item button" data-page="/">CAD Engine Settings</div>
+        <div class="nav-sub-item button" data-page="/">CAD Production Design Queue</div>
+      </div>
+      <div class="nav-sub" id="integrations-netsuite">
+        <h2>netsuite</h2>
+        <div class="nav-sub-item button" data-page="/">NetSuite Item Mapping</div>
+        <div class="nav-sub-item button" data-page="/">NetSuite Settings</div>
+        <div class="nav-sub-item button" data-page="/">NetSuite User Mapping</div>
+      </div>
+      <div class="nav-sub" id="integrations-oracle">
+        <h2>oracle</h2>
+        <div class="nav-sub-item button" data-page="/">Oracle Sales Cloud Settings</div>
+        <div class="nav-sub-item button" data-page="/">Oracle Sales Cloud Users</div>
+      </div>
+      <div class="nav-sub" id="settings-catalog">
+        <h2>catalog</h2>
+        <div class="nav-sub-item button" data-page="/">Catalog Settings</div>
+        <div class="nav-sub-item button" data-page="/">Catalog Categories</div>
+        <div class="nav-sub-item button" data-page="/">Where to Buy</div>
+        <div class="nav-sub-item button" data-page="/">Checkout Settings</div>
+      </div>
+      <div class="nav-sub" id="settings-cart">
+        <h2>cart</h2>
+        <div class="nav-sub-item button" data-page="/">Cart List Columns</div>
+        <div class="nav-sub-item button" data-page="/">Order Numbers</div>
+      </div>
+      <div class="nav-sub" id="settings-customization">
+        <h2>customization</h2>
+        <div class="nav-sub-item button" data-page="/">API Javadoc</div>
+        <div class="nav-sub-item button" data-page="/">JPoC Code Generator</div>
+        <div class="nav-sub-item button" data-page="/">JPoC Files</div>
+        <div class="nav-sub-item button" data-page="/">JPoC Manager</div>
+      </div>
+      <div class="nav-sub" id="settings-localization">
+        <h2>localization</h2>
+        <div class="nav-sub-item button" data-page="/">Locales</div>
+        <div class="nav-sub-item button" data-page="/">Locale Translator</div>
+        <div class="nav-sub-item button" data-page="/">Locale Translation Backup/Restore</div>
+        <div class="nav-sub-item button" data-page="/">Locale Translation Synchronizer</div>
+        <div class="nav-sub-item button" data-page="/">Locale Translator XLIFF Import/Export</div>
+      </div>
+      <div class="nav-sub" id="settings-system">
+        <h2>system</h2>
+        <div class="nav-sub-item button" data-page="/">Application Information</div>
+        <div class="nav-sub-item button" data-page="/MaintainCompany">Company Settings</div>
+        <div class="nav-sub-item button" data-page="/">System Settings</div>
+        <div class="nav-sub-item button" data-page="/">Feedback Settings</div>
+        <div class="nav-sub-item button" data-page="/">File Upload Types</div>
+        <div class="nav-sub-item button" data-page="/">Logs</div>
+        <div class="nav-sub-item button" data-page="/">Logging Levels</div>
+        <div class="nav-sub-item button" data-page="/">Publishing Environments</div>
+      </div>
+      <div class="nav-sub" id="settings-interface">
+        <h2>app interface</h2>
+        <div class="nav-sub-item button" data-page="/">Default Text</div>
+        <div class="nav-sub-item button" data-page="/">Custom CSS</div>
+        <div class="nav-sub-item button" data-page="/">Help Screens</div>
+      </div>
+      <div class="nav-sub" id="settings-templates">
+        <h2>templates</h2>
+        <div class="nav-sub-item button" data-page="/">Document Templates</div>
+        <div class="nav-sub-item button" data-page="/">Template Cross Reference</div>
+        <div class="nav-sub-item button" data-page="/">Template Permission</div>
+      </div>
+      <div class="nav-sub" id="settings-queues">
+        <h2>queues</h2>
+        <div class="nav-sub-item button" data-page="/spr/admin/DataProtectionOptOut">Account Deletion Request Queue</div>
+        <div class="nav-sub-item button" data-page="/DesignQueueMaint">Configuration Queue</div>
+        <div class="nav-sub-item button" data-page="/ConnectQueueMaint">Connect Queue</div>
+        <div class="nav-sub-item button" data-page="/EmailQueueMaint">E-mail Queue</div>
+        <div class="nav-sub-item button" data-page="/MassReplaceListing">Item Mass Replace Queue</div>
+        <div class="nav-sub-item button" data-page="/NewUserQueue">New User Queue</div>
+        <div class="nav-sub-item button" data-page="/order/OrderRequestMaint.jsp">Order Request Queue</div>
+        <div class="nav-sub-item button" data-page="/DocumentQueueMaint">Quote Queue</div>
+        <div class="nav-sub-item button" data-page="/quote/QuoteRequestMaint.jsp">Quote Request Queue</div>
+        <div class="nav-sub-item button" data-page="/publish/Queue.jsp">Publish Queue</div>
+        <div class="nav-sub-item button" data-page="/EtoList">Special Request Queue</div>
+        <div class="nav-sub-item button" data-page="/spr/admin/CheckoutQueue">Web Order Queue</div>
+      </div>
+      <div class="nav-sub" id="lifecycle">
+        <h2>lifecycle</h2>
+      </div>
+    </div>
+    <iframe src="https://master.configureonedemo.com"></iframe>
+    <div class="overlay" id="wizard">
+      <div class="nav-column">
+        <div class="nav-indent">
+          <button class="button outline">
+            <i class="fa-regular fa-circle-chevron-left"></i>
+            Exit Wizard
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="shared.js"></script>
+  </body>
+</html>
