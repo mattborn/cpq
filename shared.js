@@ -74,5 +74,5 @@ function handle_subnav(id) {
 }
 
 function handle_page(url) {
-  document.querySelector('iframe').src = 'https://master.configureonedemo.com/'+ url
+  document.querySelector('iframe').src = 'https://master.configureonedemo.com'+ url
 }

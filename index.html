@@ -8,8 +8,20 @@
   </head>
   <body>
     <div class="nav-column" id="nav-first">
-      <div class="nav-indent">
-        <div>Revalize Cloud</div>
+      <div id="app-brand">
+        <svg width="35" height="40" viewBox="0 0 35 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M34.641 10L17.3205 0L0 10V30L6.73574 33.8889L6.73564 13.8889L17.3204 7.77779L27.9051 13.8889L27.9052 20.0168L34.641 23.9057V10ZM34.6412 30L17.3206 40L17.3206 20L34.6412 30Z" fill="url(#paint0_linear_612_20400)"/>
+          <defs>
+          <linearGradient id="paint0_linear_612_20400" x1="17.3205" y1="0" x2="17.3205" y2="40" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#13508B"/>
+          <stop offset="1" stop-color="#00ADD8"/>
+          </linearGradient>
+          </defs>
+        </svg>
+        <div>
+          <h1 id="app-brand-name">Revalize CPQ</h1>
+          <small>Specialty Manufacturing</small>
+        </div>
       </div>
       <div class="nav-indent">
         <div class="quick-search">
@@ -172,12 +184,12 @@
     </div>
     <div class="nav-column" id="nav-second">
       <div class="nav-sub expand" id="dashboards">
-        <h2>dashboards</h2>
-        <div class="nav-sub-item button" data-page="/AdminMain">Admin Home</div>
+        <h2 class="nav-sub-title">Dashboards</h2>
+        <div class="nav-sub-item button" data-page="/AdminMain?page_ind=query">Admin Home</div>
         <div class="nav-sub-item button active" data-page="/">Front End Home</div>
       </div>
       <div class="nav-sub" id="tools-general">
-        <h2>general tools</h2>
+        <h2 class="nav-sub-title">Tools</h2>
         <div class="nav-sub-item button" data-page="/AdminMain?page_ind=not%20found">File Manager</div>
         <div class="nav-sub-item button" data-page="/AdminMain?page_ind=not%20found">Import/Export</div>
         <div class="nav-sub-item button" data-page="/CopyUtilityMaint">Product Copy</div>
@@ -186,27 +198,27 @@
         <div class="nav-sub-item button" data-page="/ProductStatusMaint">Configuration Status Change</div>
       </div>
       <div class="nav-sub" id="tools-maintenance">
-        <h2>maintenance</h2>
+        <h2 class="nav-sub-title">Maintenance</h2>
         <div class="nav-sub-item button" data-page="/core/clipperMaintenance.jsp">Update Catalog Index</div>
         <div class="nav-sub-item button" data-page="/spr/admin/MaintenanceMode">Maintenance Mode</div>
         <div class="nav-sub-item button" data-page="/DesignPurge">Delete Records</div>
         <div class="nav-sub-item button" data-page="/RealTime2DAdmin">Flush Image Cache</div>
       </div>
       <div class="nav-sub" id="tools-messaging">
-        <h2>messaging</h2>
+        <h2 class="nav-sub-title">Messaging</h2>
         <div class="nav-sub-item button" data-page="/SystemMsgMaint">System Messages</div>
         <div class="nav-sub-item button" data-page="/Session">User Alerts</div>
         <div class="nav-sub-item button" data-page="/SendGroupEmail">Group E-mail</div>
       </div>
       <div class="nav-sub" id="tools-package">
-        <h2>package &amp; publish</h2>
+        <h2 class="nav-sub-title">Package &amp; Publish</h2>
         <div class="nav-sub-item button" data-page="/publish/Packager">Data Packager</div>
         <div class="nav-sub-item button" data-page="/publish/PublishScheduler">Publish Scheduler</div>
         <div class="nav-sub-item button" data-page="/publish/PackageManager">Package Uploader</div>
         <div class="nav-sub-item button" data-page="/publish/SuperPackager">Product Packager</div>
       </div>
       <div class="nav-sub" id="tools-reports">
-        <h2>reports</h2>
+        <h2 class="nav-sub-title">Reports</h2>
         <div class="nav-sub-item button" data-page="/BugMaint">Administrative Feedback</div>
         <div class="nav-sub-item button" data-page="/core/CompanyAssignmentReport.jsp">Company Assignment</div>
         <div class="nav-sub-item button" data-page="/spr/Configurations">Configurations</div>
@@ -227,7 +239,7 @@
         <div class="nav-sub-item button" data-page="/core/WorkGroupUserReport.jsp">Workgroups by User</div>
       </div>
       <div class="nav-sub" id="quotes-orders">
-        <h2>quotes &amp; orders</h2>
+        <h2 class="nav-sub-title">Quotes &amp; Orders</h2>
         <!-- Combined pages for Quotes & Orders dons't exist yet; pointing to quote pages for now -->
         <div class="nav-sub-item button" data-page="/spr/admin/OrderStatusMaint">Quote &amp; Order Statuses</div>
         <div class="nav-sub-item button" data-page="/DocumentProbabilityMaint">Probability Lost Status</div>
@@ -241,14 +253,14 @@
         <div class="nav-sub-item button" data-page="/spr/admin/QuoteSerialNumMaint">Quote & Order Numbers</div> <!-- Multiple pages not yet combined -->
       </div>
       <div class="nav-sub" id="products">
-        <h2>products</h2>
+        <h2 class="nav-sub-title">Products</h2>
         <div class="nav-sub-item button" data-page="/ProductMaint">Product List</div>
         <div class="nav-sub-item button" data-page="/NewDesignCategoryAdmin">Product Categories</div>
         <div class="nav-sub-item button" data-page="/ProductRevisionHistory">Product Revision History</div>
         <div class="nav-sub-item button" data-page="/ProductRights">Product Permissions</div>
       </div>
       <div class="nav-sub" id="items">
-        <h2>items</h2>
+        <h2 class="nav-sub-title">Items</h2>
         <div class="nav-sub-item button" data-page="/ItemFamilyMaint">Item Families</div>
         <div class="nav-sub-item button" data-page="/ItemMasterMaint">Item List</div>
         <div class="nav-sub-item button" data-page="/StaticItemStructureMaint">Item Subassemblies</div>
@@ -258,7 +270,7 @@
         <div class="nav-sub-item button" data-page="/SeqMaint?type=IF&refresh=Y">Item Number Sequence</div> <!-- Multiple pages not yet combined -->
       </div>
       <div class="nav-sub" id="configs-setup">
-        <h2>interface setup</h2>
+        <h2 class="nav-sub-title">Interface Setup</h2>
         <div class="nav-sub-item button" data-page="/ProdLogicItemMaint?global_ind=N&init=Y">Logic Items &amp; Groups</div> <!-- Two pages not yet combined -->
         <div class="nav-sub-item button" data-page="/ProdLogicItemMaint?global_ind=Y&init=Y">Persistent Logic Items</div>
         <div class="nav-sub-item button" data-page="/EquationMaint">Equations</div>
@@ -267,7 +279,7 @@
         <div class="nav-sub-item button" data-page="/JavaScriptFileMaint">Javascript Functions</div>
       </div>
       <div class="nav-sub" id="configs-bom">
-        <h2>bom</h2>
+        <h2 class="nav-sub-title">BOM</h2>
         <div class="nav-sub-item button" data-page="/BomLogicItemMaint">BOM Logic Items</div>
         <div class="nav-sub-item button" data-page="/DrivenItemMasterMaint">Driven Item Masters</div>
         <div class="nav-sub-item button" data-page="/ItemStructureMaint">BOM Skeletons</div> <!-- Two pages not yet combined -->
@@ -275,7 +287,7 @@
         <div class="nav-sub-item button" data-page="/BomTempMaint">BOM Temporary Fields</div>
       </div>
       <div class="nav-sub" id="configs-routing">
-        <h2>routing</h2>
+        <h2 class="nav-sub-title">Routing</h2>
         <div class="nav-sub-item button" data-page="/RoutingVarMaint?init=y">Routing Sequence</div>
         <div class="nav-sub-item button" data-page="/RoutingStepMaint">Routing Operations</div>
         <div class="nav-sub-item button" data-page="/RoutingParamMaint">Routing Parameters</div>
@@ -287,12 +299,12 @@
         <div class="nav-sub-item button" data-page="/RoutingStepLogicItemMaint?init=y">Routing Operation Logic Items</div>
       </div>
       <div class="nav-sub" id="configs-2d">
-        <h2>2D &amp; 3D</h2>
+        <h2 class="nav-sub-title">2D &amp; 3D</h2>
         <div class="nav-sub-item button" data-page="/RealTime2DAdmin">Real Time 2D Images</div> <!-- Two pages not yet combined -->
         <div class="nav-sub-item button" data-page="/spr/realtime3D">Real Time 3D Models</div>
       </div>
       <div class="nav-sub" id="configs-settings">
-        <h2>config settings</h2>
+        <h2 class="nav-sub-title">Config Settings</h2>
         <div class="nav-sub-item button" data-page="/AutoLoginMaint?init=Y">Anonymous Login Links</div>
         <div class="nav-sub-item button" data-page="/StatusEventMaint">Configuration Status Notifications</div>
         <div class="nav-sub-item button" data-page="/GroupAccess?function=logic_items">Configuration Logic Group Permissions</div>
@@ -302,7 +314,7 @@
         <div class="nav-sub-item button" data-page="/spr/admin/ConfigurationSerialNumMaint">Configuration Numbers</div>
       </div>
       <div class="nav-sub" id="pricing-setup">
-        <h2>pricing setup</h2>
+        <h2 class="nav-sub-title">Pricing Setup</h2>
         <div class="nav-sub-item button" data-page="/PriceBookMaint">Price Books</div>
         <div class="nav-sub-item button" data-page="/PricingFactorsMaint">Pricing Factors</div>
         <div class="nav-sub-item button" data-page="/PriceEqMaint">Pricing Equations</div>
@@ -311,7 +323,7 @@
         <div class="nav-sub-item button" data-page="/CurrencyMaint">Currency Conversion</div>
       </div>
       <div class="nav-sub" id="pricing-discounts">
-        <h2>discounts</h2>
+        <h2 class="nav-sub-title">Discounts</h2>
         <div class="nav-sub-item button" data-page="/spr/admin/DiscountMaintenance">Discount Rules</div>
         <div class="nav-sub-item button" data-page="/DiscountGroupMaint">Discount Groups</div>
         <div class="nav-sub-item button" data-page="/spr/admin/DiscountWorkflowMaint">Discount Workflows</div> <!-- Two pages not yet combined -->
@@ -319,12 +331,12 @@
         <div class="nav-sub-item button" data-page="/ProductPromoMaint">Promotional Discounts</div> <!-- Two pages not yet combined -->
       </div>
       <div class="nav-sub" id="pricing-permissions">
-        <h2>permissions</h2>
+        <h2 class="nav-sub-title">Permissions</h2>
         <div class="nav-sub-item button" data-page="/DistMarkupRights">Distributor Pricing</div>
         <div class="nav-sub-item button" data-page="/PriceBookRights">Price Book</div>
       </div>
       <div class="nav-sub" id="users">
-        <h2>users</h2>
+        <h2 class="nav-sub-title">Users</h2>
         <div class="nav-sub-item button" data-page="/UserMaint">User Groups</div>
         <div class="nav-sub-item button" data-page="/CustomerMaint">Customers</div> <!-- Two pages not yet combined -->
         <div class="nav-sub-item button" data-page="/MaintainCompany">Companies</div> <!-- Two pages not yet combined -->
@@ -333,13 +345,13 @@
         <div class="nav-sub-item button" data-page="/EmailGroup">Notification Groups</div> <!-- Two pages not yet combined -->
       </div>
       <div class="nav-sub" id="users-permissions">
-        <h2>permissions</h2>
+        <h2 class="nav-sub-title">Permissions</h2>
         <div class="nav-sub-item button" data-page="/GroupRights">User Groups</div>
         <div class="nav-sub-item button" data-page="/CustomerRights2">Customers</div>
         <div class="nav-sub-item button" data-page="/GroupAccess?function=query">Query Access</div>
       </div>
       <div class="nav-sub" id="integrations-general">
-        <h2>general integrations</h2>
+        <h2 class="nav-sub-title">Integrations</h2>
         <div class="nav-sub-item button" data-page="/spr/admin/TaxSettings">Avalara Settings</div>
         <div class="nav-sub-item button" data-page="/ConnectMaint">Connect Settings</div>
         <div class="nav-sub-item button" data-page="/dynamics/VarMaint.jsp">Dynamics CRM Settings</div>
@@ -347,7 +359,7 @@
         <div class="nav-sub-item button" data-page="/SFVarMaint">Salesforce Settings</div>
       </div>
       <div class="nav-sub" id="integrations-cad">
-        <h2>cad</h2>
+        <h2 class="nav-sub-title">CAD</h2>
         <div class="nav-sub-item button" data-page="/DesignParamMaint">CAD Configuration Variables</div>
         <div class="nav-sub-item button" data-page="/ConfiguratorModels">CAD Engine Models</div>
         <div class="nav-sub-item button" data-page="/ModelBypassMaint">CAD Model Bypass</div>
@@ -359,37 +371,37 @@
         <div class="nav-sub-item button" data-page="/MassDesignQueueMaint">CAD Production Design Queue</div>
       </div>
       <div class="nav-sub" id="integrations-netsuite">
-        <h2>netsuite</h2>
+        <h2 class="nav-sub-title">NetSuite</h2>
         <div class="nav-sub-item button" data-page="/NSItemMapping">NetSuite Item Mapping</div>
         <div class="nav-sub-item button" data-page="/NSVarMaint">NetSuite Settings</div>
         <div class="nav-sub-item button" data-page="/netsuite/nsusers.jsp">NetSuite User Mapping</div>
       </div>
       <div class="nav-sub" id="integrations-oracle">
-        <h2>oracle</h2>
+        <h2 class="nav-sub-title">Oracle</h2>
         <div class="nav-sub-item button" data-page="/spr/admin/OracleSalesCloudSettings">Oracle Sales Cloud Settings</div>
         <div class="nav-sub-item button" data-page="/spr/admin/OracleSalesCloudUsers">Oracle Sales Cloud Users</div>
       </div>
       <div class="nav-sub" id="settings-catalog">
-        <h2>catalog</h2>
+        <h2 class="nav-sub-title">Catalog</h2>
         <div class="nav-sub-item button" data-page="/EcatCategoryAdmin">Catalog Settings</div>
         <div class="nav-sub-item button" data-page="/EcatCategoryAdmin">Catalog Categories</div>
         <div class="nav-sub-item button" data-page="/core/distributors.jsp">Where to Buy</div>
         <div class="nav-sub-item button" data-page="/spr/admin/CheckoutParams">Checkout Settings</div>
       </div>
       <div class="nav-sub" id="settings-cart">
-        <h2>cart</h2>
+        <h2 class="nav-sub-title">Cart</h2>
         <div class="nav-sub-item button" data-page="/CartDisplayMaint">Cart List Columns</div>
         <div class="nav-sub-item button" data-page="/spr/admin/WebOrderSerialNumMaint">Order Numbers</div>
       </div>
       <div class="nav-sub" id="settings-customization">
-        <h2>customization</h2>
+        <h2 class="nav-sub-title">Customization</h2>
         <div class="nav-sub-item button" data-page="/">API Javadoc</div> <!-- https://poc200.configurators.com/HTML/api/docs/index.html -->
         <div class="nav-sub-item button" data-page="/JPOCCodeGenerator">JPoC Code Generator</div>
         <div class="nav-sub-item button" data-page="/htmlJpocMaint">JPoC Files</div> <!-- Multiple pages not yet combined -->
         <div class="nav-sub-item button" data-page="/JPoCMaint?init=Y">JPoC Manager</div>
       </div>
       <div class="nav-sub" id="settings-localization">
-        <h2>localization</h2>
+        <h2 class="nav-sub-title">Localization</h2>
         <div class="nav-sub-item button" data-page="/LocaleMaint">Locales</div>
         <div class="nav-sub-item button" data-page="/LocaleTranslationMaint">Locale Translator</div>
         <div class="nav-sub-item button" data-page="/LocaleBackup">Locale Translation Backup/Restore</div>
@@ -397,7 +409,7 @@
         <div class="nav-sub-item button" data-page="/core/localeAdmin/XliffImportExport.jsp">Locale Translator XLIFF Import/Export</div>
       </div>
       <div class="nav-sub" id="settings-system">
-        <h2>system</h2>
+        <h2 class="nav-sub-title">System</h2>
         <div class="nav-sub-item button" data-page="/spr/admin/Manifest/concept">Application Information</div> <!-- Multiple pages not yet combined -->
         <div class="nav-sub-item button" data-page="/MfrMaint">Company Settings</div>
         <div class="nav-sub-item button" data-page="/SystemTableMaint">System Settings</div>
@@ -408,19 +420,19 @@
         <div class="nav-sub-item button" data-page="/publish/PublishSettings.jsp">Publishing Environments</div>
       </div>
       <div class="nav-sub" id="settings-interface">
-        <h2>app interface</h2>
+        <h2 class="nav-sub-title">App Interface</h2>
         <div class="nav-sub-item button" data-page="/ConceptTextMaint">Default Text</div>
         <div class="nav-sub-item button" data-page="/spr/admin/CssEditor">Custom CSS</div>
         <div class="nav-sub-item button" data-page="/spr/admin/HelpMaintUI">Help Screens</div>
       </div>
       <div class="nav-sub" id="settings-templates">
-        <h2>templates</h2>
+        <h2 class="nav-sub-title">Templates</h2>
         <div class="nav-sub-item button" data-page="/DocumentTemplateMaint">Document Templates</div>
         <div class="nav-sub-item button" data-page="/DocTmplXrefMaint">Template Cross Reference</div>
         <div class="nav-sub-item button" data-page="/DocumentTemplateRights">Template Permission</div>
       </div>
       <div class="nav-sub" id="settings-queues">
-        <h2>queues</h2>
+        <h2 class="nav-sub-title">Queues</h2>
         <div class="nav-sub-item button" data-page="/spr/admin/DataProtectionOptOut">Account Deletion Request Queue</div>
         <div class="nav-sub-item button" data-page="/DesignQueueMaint">Configuration Queue</div>
         <div class="nav-sub-item button" data-page="/ConnectQueueMaint">Connect Queue</div>
@@ -435,7 +447,7 @@
         <div class="nav-sub-item button" data-page="/spr/admin/CheckoutQueue">Web Order Queue</div>
       </div>
       <div class="nav-sub" id="lifecycle">
-        <h2>lifecycle</h2>
+        <h2 class="nav-sub-title">Lifecycle</h2>
       </div>
     </div>
     <iframe src="https://master.configureonedemo.com"></iframe>
